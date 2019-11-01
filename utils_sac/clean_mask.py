@@ -3,6 +3,8 @@ import numpy as np
 import xarray as xr
 from xarray.ufuncs import logical_and as xr_and
 from xarray.ufuncs import logical_or  as xr_or
+from scipy.ndimage.filters import uniform_filter
+from scipy.ndimage.measurements import variance
 
 def create_2D_mosaic_clean_mask(clean_mask):
     """
@@ -148,3 +150,15 @@ def xarray_values_in(data, values, data_vars=None):
         for value in values:
             mask = mask | (data.values == value)
     return mask
+
+def lee_filter(da, size):
+    img = da.values
+    img_mean = uniform_filter(img, (size, size))
+    img_sqr_mean = uniform_filter(img**2, (size, size))
+    img_variance = img_sqr_mean - img_mean**2
+
+    overall_variance = variance(img)
+
+    img_weights = img_variance / (img_variance + overall_variance)
+    img_output = img_mean + img_weights * (img - img_mean)
+    return img_output
