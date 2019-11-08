@@ -1,3 +1,5 @@
+#Currently redundant - SArah trying to turn s1_wofs_classify into a utils_function. 
+
 import gc
 import numpy as np
 import xarray as xr
