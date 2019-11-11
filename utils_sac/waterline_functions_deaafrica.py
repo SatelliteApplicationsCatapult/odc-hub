@@ -65,10 +65,10 @@ def load_cloudmaskedlandsat(dc, query, platforms=['ls5', 'ls7', 'ls8'],
 
         # Load landsat data
         landsat_ds = dc.load(product=f'{platform}_usgs_sr_scene', 
-                             dask_chunks={'time': 1}, 
-                             measurements=new_bands,
-                             group_by='solar_day', 
-                             **query)
+                           dask_chunks={'time': 1}, 
+                           measurements=new_bands,
+                           group_by='solar_day', 
+                           **query)
         
         # Mask out all pixels affected by cloud, cloud shadow, or other invalid data
         from datacube.storage import masking
