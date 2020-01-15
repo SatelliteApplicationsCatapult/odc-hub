@@ -2,9 +2,6 @@
 def NDVI(dataset):
     return (dataset.nir - dataset.red)/(dataset.nir + dataset.red)
 
-def NDVI(dataset):
-    return (dataset.nir - dataset.red)/(dataset.nir + dataset.red)
-
 def NDWI(dataset):
     return (dataset.green - dataset.nir)/(dataset.green + dataset.nir)
 
