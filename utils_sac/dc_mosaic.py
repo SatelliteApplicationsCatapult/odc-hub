@@ -378,8 +378,8 @@ def ls8_unpack_qa( data_array , cover_type):
     return unpack_bits(land_cover_endcoding, data_array, cover_type)
 
 def sen2_unpack_qa( data_array , cover_type):
-    land_cover_endcoding = dict( fill         =[0, 1] ,
-                                 clear        =[4, 5],
+    land_cover_endcoding = dict( #fill         =[0, 1] ,
+                                 clear        =[4, 5, 7, 2],
                                  water        =[6],
                                  shadow       =[3],
                                  snow         =[11],
