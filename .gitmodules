@@ -3,4 +3,4 @@
 	url = https://github.com/ceos-seo/data_cube_utilities.git
 [submodule "sac_utils"]
 	path = sac_utils
-	url = git@github.com:SatelliteApplicationsCatapult/sac_utils.git
+	url = https://github.com/SatelliteApplicationsCatapult/sac_utils.git
