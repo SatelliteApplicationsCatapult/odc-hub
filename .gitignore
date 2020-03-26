@@ -11,3 +11,6 @@ __pycache__/
 
 # Dask
 dask-worker-space/
+
+# Tiff
+dask_conversions/**/*.tiff
