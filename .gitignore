@@ -8,3 +8,9 @@ __pycache__/
 
 # Environments
 .env
+
+# Dask
+dask-worker-space/
+
+# Tiff
+dask_conversions/**/*.tiff
