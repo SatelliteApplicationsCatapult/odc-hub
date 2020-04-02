@@ -1,0 +1,52 @@
+creation_dt: '2020-04-01 10:55:50'
+extent:
+  center_dt: '2014-07-02 12:00:00'
+  coord:
+    ll:
+      lat: -18.034087536696433
+      lon: 178.23932576286228
+    lr:
+      lat: -18.033358854206945
+      lon: 179.48669488974443
+    ul:
+      lat: -16.72468566021192
+      lon: 178.24294361894968
+    ur:
+      lat: -16.72401302248128
+      lon: 179.48147609286184
+  from_dt: '2014-01-01 00:00:00'
+  to_dt: '2015-01-01 00:00:00'
+format:
+  name: GeoTiff
+grid_spatial:
+  projection:
+    geo_ref_points:
+      ll:
+        x: 1945935.0
+        y: 3885495.0
+      lr:
+        x: 2077995.0
+        y: 3885495.0
+      ul:
+        x: 1945935.0
+        y: 4030395.0
+      ur:
+        x: 2077995.0
+        y: 4030395.0
+    spatial_reference: PROJCS["Fiji 1986 / Fiji Map Grid",GEOGCS["Fiji 1986",DATUM["Fiji_Geodetic_Datum_1986",SPHEROID["WGS
+      72",6378135,298.26,AUTHORITY["EPSG","7043"]],TOWGS84[0,0,4.5,0,0,0.554,0.2263],AUTHORITY["EPSG","6720"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4720"]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",-17],PARAMETER["central_meridian",178.75],PARAMETER["scale_factor",0.99985],PARAMETER["false_easting",2000000],PARAMETER["false_northing",4000000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],AUTHORITY["EPSG","3460"]]
+id: d30968dd-f618-5d92-a3cb-a663f28bf923
+image:
+  bands:
+    'no':
+      path: wofssummary_20140101_20150101_no.tif
+    pc:
+      path: wofssummary_20140101_20150101_pc.tif
+instrument:
+  name: na
+lineage:
+  source_datasets: na
+platform:
+  code: WOFS_SUMMARY
+processing_level: na
+product_type: wofs_summary

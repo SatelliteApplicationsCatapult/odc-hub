@@ -1,0 +1,22 @@
+name: wofs_summary
+description: Generating summary water products from WOFS-like products.
+metadata_type: eo
+
+metadata:
+    platform:
+        code: WOFS_SUMMARY
+    product_type: wofs_summary
+    format:
+        name: GeoTIFF
+
+measurements:
+    - name: 'pc'
+      aliases: [water_pc, water_persistence]
+      dtype: int16
+      units: 'percentage'
+      nodata: -9999
+    - name: 'no'
+      aliases: [water_no, number_valid_observations]
+      dtype: int16
+      units: 'percentage'
+      nodata: -9999
