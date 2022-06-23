@@ -13,7 +13,6 @@ import scipy.interpolate
 import multiprocessing as mp
 from scipy import ndimage as nd
 from skimage.measure import label
-from rasterstats import zonal_stats
 from skimage.measure import find_contours
 #from geopy.geocoders import Nominatim
 from shapely.geometry import mapping, shape
